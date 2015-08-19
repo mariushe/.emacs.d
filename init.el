@@ -35,6 +35,13 @@
 (let ((default-directory "~/.emacs.d/site-lisp/"))
   (normal-top-level-add-subdirs-to-load-path))
 
+;; Functions (load all files in defuns-dir)
+(setq defuns-dir (expand-file-name "defuns" user-emacs-directory))
+(dolist (file (directory-files defuns-dir t "\\w+"))
+  (when (file-regular-p file)
+    (load file)))
+
+
 ;; Save point position between sessions
 (require 'saveplace)
 (setq-default save-place t)
@@ -65,7 +72,8 @@
      ido-vertical-mode
      ido-at-point
      yasnippet
-     better-defaults)))
+     better-defaults
+     aggressive-indent)))
 
 (condition-case nil
     (init--install-packages)
@@ -87,6 +95,9 @@
 
 (require 'find-file-in-project)
 (require 'ace-jump-mode)
+(require 'eproject)
+(require 'aggressive-indent)
+
 ;; Default setup of smartparens
 (require 'smartparens-config)
 (setq sp-autoescape-string-quote nil)
@@ -98,6 +109,7 @@
 
 
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 
 ;; Map files to modes
 (require 'mode-mappings)
