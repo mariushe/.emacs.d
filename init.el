@@ -86,7 +86,7 @@
 (require 'setup-yasnippet)
 
 (require 'find-file-in-project)
-
+(require 'ace-jump-mode)
 ;; Default setup of smartparens
 (require 'smartparens-config)
 (setq sp-autoescape-string-quote nil)
