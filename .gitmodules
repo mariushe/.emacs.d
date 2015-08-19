@@ -1,0 +1,21 @@
+[submodule "site-lisp/dash"]
+	path = site-lisp/dash
+	url = https://github.com/magnars/dash.el.git
+[submodule "site-lisp/s"]
+	path = site-lisp/s
+	url = https://github.com/magnars/s.el.git
+[submodule "site-lisp/clj-refactor"]
+	path = site-lisp/clj-refactor
+	url = https://github.com/magnars/clj-refactor.el.git
+[submodule "site-lisp/expand-region"]
+	path = site-lisp/expand-region
+	url = https://github.com/magnars/expand-region.el.git
+[submodule "site-lisp/multiple-cursors"]
+	path = site-lisp/multiple-cursors
+	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule "site-lisp/ido-ubiquitous"]
+	path = site-lisp/ido-ubiquitous
+	url = https://github.com/DarwinAwardWinner/ido-ubiquitous.git
+[submodule "site-lisp/find-file-in-project"]
+	path = site-lisp/find-file-in-project
+	url = https://github.com/technomancy/find-file-in-project
