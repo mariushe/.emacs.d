@@ -73,7 +73,8 @@
      ido-at-point
      yasnippet
      better-defaults
-     aggressive-indent)))
+     aggressive-indent
+     exec-path-from-shell)))
 
 (condition-case nil
     (init--install-packages)
@@ -98,6 +99,9 @@
 (require 'eproject)
 (require 'aggressive-indent)
 
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
+
 ;; Default setup of smartparens
 (require 'smartparens-config)
 (setq sp-autoescape-string-quote nil)
@@ -119,5 +123,12 @@
 
 (require 'expand-region)
 (require 'multiple-cursors)
+
+;; Setup exec paths
+;;(add-to-list 'exec-path "~/bin")
+;;(add-to-list 'exec-path "/usr/local/bin")
+;;(add-to-list 'exec-path "/bin")
+;;(add-to-list 'exec-path "/sbin")
+
 
 
