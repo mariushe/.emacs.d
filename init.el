@@ -67,6 +67,7 @@
      cider
      rainbow-delimiters
      flycheck-clojure
+     markdown-mode
      flycheck
      flx-ido
      ido-vertical-mode
@@ -101,11 +102,15 @@
 ;; Default setup of smartparens
 (require 'smartparens-config)
 (setq sp-autoescape-string-quote nil)
+(--each '(markdown-mode)
+  (add-hook it 'turn-on-smartparens-mode))
 
 ;;(eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
 (eval-after-load 'ido '(require 'setup-ido))
-
 (eval-after-load 'flycheck '(require 'setup-flycheck))
+
+;; Language specific setup files
+(eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 
 
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
