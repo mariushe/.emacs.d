@@ -5,7 +5,6 @@
 (global-set-key (kbd "C-x C--") 'rotate-windows)
 (global-unset-key (kbd "C-x C-+")) ;; don't zoom like this
 
-
 ;; Expand region (increases selected region by semantic units)
 (global-set-key (if is-mac (kbd "C-@") (kbd "C-'")) 'er/expand-region)
 
@@ -39,6 +38,12 @@
 (global-set-key (kbd "C-~") 'mc/reverse-regions)
 (global-set-key (kbd "M-~") 'mc/sort-regions)
 (global-set-key (kbd "H-~") 'mc/insert-numbers)
+
+;; Dired
+(global-set-key (kbd "C-x C-j") 'dired-jump) (autoload 'dired-jump "dired")
+;; Find files by name and display results in dired
+(global-set-key (kbd "M-s f") 'find-name-dired)
+
 
 
 (provide 'key-bindings)
