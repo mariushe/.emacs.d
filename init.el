@@ -78,7 +78,8 @@
      yasnippet
      better-defaults
      aggressive-indent
-     exec-path-from-shell)))
+     exec-path-from-shell
+     js2-mode)))
 
 (condition-case nil
     (init--install-packages)
