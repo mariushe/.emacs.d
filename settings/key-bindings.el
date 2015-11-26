@@ -44,6 +44,9 @@
 ;; Find files by name and display results in dired
 (global-set-key (kbd "M-s f") 'find-name-dired)
 
+;; Org mode
+(global-set-key "\C-ca" 'org-agenda)
+
 
 
 (provide 'key-bindings)
