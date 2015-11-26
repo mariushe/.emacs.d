@@ -79,7 +79,7 @@
    `(linum ((,class (:slant italic :foreground ,bg4 :background ,bg1))))
    `(org-code ((,class (:foreground ,fg2))))
    `(org-hide ((,class (:foreground ,fg4))))
-   `(org-level-1 ((,class (:bold t :foreground ,fg2 :height 1.1))))
+   `(org-level-1 ((,class (:bold t :foreground ,builtin :height 1.1))))
    `(org-level-2 ((,class (:bold nil :foreground ,fg3))))
    `(org-level-3 ((,class (:bold t :foreground ,fg4))))
    `(org-level-4 ((,class (:bold nil :foreground ,bg4))))
