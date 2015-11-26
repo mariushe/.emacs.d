@@ -17,6 +17,11 @@
 (setq org-directory "~/Dropbox/org")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
+;; Makes sure that agenda don't mess up the windows
+(setq org-agenda-window-setup 'current-window) 
+
+;; Some keys
+
 
 ;; Styling 
 
