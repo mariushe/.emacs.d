@@ -47,6 +47,9 @@
 ;; Org mode
 (global-set-key "\C-ca" 'org-agenda)
 
+;; Goto line number
+(global-set-key (kbd "C-x l") 'goto-line)
+
 
 
 (provide 'key-bindings)

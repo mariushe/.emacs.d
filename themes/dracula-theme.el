@@ -77,7 +77,7 @@
    `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
    `(default-italic ((,class (:italic t))))
    `(link ((,class (:foreground ,const :underline t))))
-   `(linum ((,class (:slant italic :foreground ,bg4 :background ,bg1))))
+   `(linum ((,class (:foreground ,func :background ,bg1))))
    `(org-code ((,class (:foreground ,fg2))))
    `(org-hide ((,class (:foreground ,fg4))))
    `(org-level-1 ((,class (:bold t :foreground ,builtin2 :height 1.1))))

@@ -78,4 +78,11 @@
 (rename-modeline "js2-mode" js2-mode "JS2")
 (rename-modeline "clojure-mode" clojure-mode "Clj")
 
+;; Show line numbers (but not whitespaces)
+(global-linum-mode 1)
+(setq-default left-fringe-width 10)
+(setq-default right-fringe-width 0)
+;;(set-face-attribute 'fringe nil :background "#ccc")
+(setq linum-format "%d")
+
 (provide 'appearance)
